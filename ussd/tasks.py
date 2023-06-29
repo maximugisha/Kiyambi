@@ -71,9 +71,10 @@ def ussd(request):
 
     elif text == "1" or text == "2" or text == "3" or text == "4":
         response = "CON Choose Your location \n"
-        response += "1. Kampala metropolitan \n"
-        response += "2. Wester Region \n"
-        response += "3. Eastern Region"
+        response += "1. Rubaga Division \n"
+        response += "2. Nakasero Division \n"
+        response += "3. Kyaddondo Division"
+        response += "4. Other Regions"
 
     elif text == "1*1" or text == "1*2" or text == "1*3":
         response = "CON Here are Sign language interpreters in your region \n"
@@ -105,7 +106,7 @@ def ussd(request):
         send_sms_order(message1)
 
         response = " END Your Selected guide hase been notified. \n"
-        response += " END They will call you shortly. \n"
+        response += " They will call you shortly. \n"
 
     else:
         response = "END Still under implementation"
