@@ -62,8 +62,8 @@ def ussd(request):
         #
         # response = "END Your Request to order has been received"
 
-        response = "CON Welcome to Kiyambi your PA.\n"
-        response += "Choose PA for \n"
+        response = "CON Welcome to Kiyambi your PPA.\n"
+        response += "Order a professional PA \n"
         response += "1. Sign Language Interpreters \n"
         response += "2. Guides \n"
         response += "3. Captioners \n"
@@ -101,7 +101,7 @@ def ussd(request):
         response += "3. Kim 4 star"
 
     elif text == "1*1*1" or text == "2*1*1" or text == "3*1*1" or text == "4*1*1":
-        message1 = "KIYAMBI P.A p Mr Maximo Mugisha located in Makererere, " \
+        message1 = "KIYAMBI PPA Mr Maximo Mugisha located in Rubaga Division, " \
                    "Kampala, has requested for your service. His Phone Number is: " + str(ussd.phone_number)
         send_sms_order(message1)
 
