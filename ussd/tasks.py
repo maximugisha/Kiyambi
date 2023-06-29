@@ -73,7 +73,7 @@ def ussd(request):
         response = "CON Choose Your location \n"
         response += "1. Rubaga Division \n"
         response += "2. Nakasero Division \n"
-        response += "3. Kyaddondo Division"
+        response += "3. Kyaddondo Division \n"
         response += "4. Other Regions"
 
     elif text == "1*1" or text == "1*2" or text == "1*3":
