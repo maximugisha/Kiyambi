@@ -17,7 +17,7 @@ sms = africastalking.SMS
 def send_sms_order(message):
     # Define some options that we will use to send the SMS
     ussd
-    recipients = ["+256702431725", "+256775097505"]
+    recipients = ["+256786608897"]
     # sender = '14262'
     # Send the SMS
     try:
